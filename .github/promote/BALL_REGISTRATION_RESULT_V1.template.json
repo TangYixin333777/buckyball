@@ -1,0 +1,14 @@
+{
+  "result_version": "BALL_REGISTRATION_RESULT_V1",
+  "ball_name": "<XxxBall>",
+  "mapping_applied": true,
+  "generator_applied": true,
+  "decode_applied": true,
+  "touched_files": [
+    "arch/src/main/scala/framework/balldomain/configs/default.json",
+    "arch/src/main/scala/examples/toy/balldomain/bbus/busRegister.scala",
+    "arch/src/main/scala/examples/toy/balldomain/DISA.scala",
+    "arch/src/main/scala/examples/toy/balldomain/DomainDecoder.scala"
+  ],
+  "errors": []
+}

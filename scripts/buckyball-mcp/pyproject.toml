@@ -1,0 +1,17 @@
+[project]
+name = "buckyball-mcp"
+version = "0.1.0"
+description = "MCP server for Buckyball multi-agent hardware design workflow"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=3.1.0",
+    "httpx>=0.28.1",
+]
+
+[project.scripts]
+buckyball-mcp = "buckyball_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

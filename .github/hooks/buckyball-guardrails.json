@@ -1,0 +1,20 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "python3 scripts/hooks/pretool_guard.py",
+        "cwd": "/home/ROXY/Code/buckyball",
+        "timeout": 15
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "python3 scripts/hooks/posttool_validate.py",
+        "cwd": "/home/ROXY/Code/buckyball",
+        "timeout": 30
+      }
+    ]
+  }
+}

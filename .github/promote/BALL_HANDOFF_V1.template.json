@@ -1,0 +1,54 @@
+{
+  "handoff_version": "BALL_HANDOFF_V1",
+  "schema_version": "1.1",
+  "ball_name": "<XxxBall>",
+  "core_name": "<Xxx>",
+  "package": "framework.balldomain.prototype.<xxx>",
+  "ball": {
+    "name": "<XxxBall>",
+    "core_name": "<Xxx>",
+    "package": "framework.balldomain.prototype.<xxx>"
+  },
+  "isa": {
+    "op": "<OPCODE_SYMBOL>",
+    "func7": "b0000000"
+  },
+  "mapping": {
+    "ballId": 0,
+    "ballName": "<XxxBall>",
+    "inBW": 1,
+    "outBW": 1
+  },
+  "registrar_min": {
+    "mapping": {
+      "ball_name": "<XxxBall>",
+      "ball_id": 0
+    },
+    "generator": {
+      "class_name": "<XxxBall>",
+      "import_path": "framework.balldomain.prototype.<xxx>.<XxxBall>"
+    },
+    "decode": {
+      "op": "<OPCODE_SYMBOL>",
+      "func7": "b0000000",
+      "bid": 0
+    }
+  },
+  "decode": {
+    "disa_symbol": "<UPPER_CASE_OPCODE_NAME>",
+    "funct7": "b0000000",
+    "bid": 0,
+    "needs_op2": false,
+    "iter_from": "rs2[9:0]"
+  },
+  "files": {
+    "wrapper": "arch/src/main/scala/framework/balldomain/prototype/<xxx>/<XxxBall>.scala",
+    "core": "arch/src/main/scala/framework/balldomain/prototype/<xxx>/<Xxx>.scala",
+    "config_scala": "arch/src/main/scala/framework/balldomain/prototype/<xxx>/configs/<XxxBallParam>.scala",
+    "config_json": "arch/src/main/scala/framework/balldomain/prototype/<xxx>/configs/default.json"
+  },
+  "constraints": {
+    "class_name_must_equal_ballName": true,
+    "bid_must_equal_ballId": true
+  }
+}

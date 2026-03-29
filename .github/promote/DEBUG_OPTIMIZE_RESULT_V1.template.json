@@ -1,0 +1,54 @@
+{
+  "result_version": "DEBUG_OPTIMIZE_RESULT_V1",
+  "ball_name": "<BallName>",
+  "status": "fixed",
+  "root_cause": "",
+  "baseline_snapshot": {
+    "area_summary": "",
+    "timing_summary": "",
+    "cycle_summary": ""
+  },
+  "post_snapshot": {
+    "area_summary": "",
+    "timing_summary": "",
+    "cycle_summary": ""
+  },
+  "comparison_table": "| Metric | Baseline | Post | Delta |\n|---|---:|---:|---:|",
+  "validate_gate": {
+    "ran": true,
+    "passed": true,
+    "notes": ""
+  },
+  "perf": {
+    "area_summary": "",
+    "timing_summary": "",
+    "cycle_summary": ""
+  },
+  "changes": [
+    {
+      "path": "",
+      "action": ""
+    }
+  ],
+  "optimization_rounds": [
+    {
+      "round": 1,
+      "runtime_revalidated_strict_pass": true,
+      "worst_path_slack": "",
+      "timing_safe": true,
+      "area_delta": "",
+      "timing_delta": "",
+      "cycle_delta": "",
+      "notes": ""
+    }
+  ],
+  "optimization_summary": {
+    "total_area_delta": "",
+    "total_timing_delta": "",
+    "total_cycle_delta": "",
+    "rounds_completed": 0,
+    "final_worst_path_slack": "",
+    "timing_safe": true
+  },
+  "next_action": "rerun_runtime_full_chain"
+}

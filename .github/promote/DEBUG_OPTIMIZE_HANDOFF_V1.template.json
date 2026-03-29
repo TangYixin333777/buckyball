@@ -1,0 +1,21 @@
+{
+  "handoff_version": "DEBUG_OPTIMIZE_HANDOFF_V1",
+  "ball_name": "<BallName>",
+  "analysis_goal": "debug_optimize",
+  "runtime": {
+    "failure_class": "RUNTIME_ENV_OR_INFRA",
+    "classification": "fail",
+    "log_path": "arch/log/<timestamp>/bdb.ndjson",
+    "stdout_log_path": "arch/log/<timestamp>/stdout.log",
+    "disasm_log_path": "arch/log/<timestamp>/disasm.log",
+    "test_target": "ctest_<op>_test",
+    "binary_name": "ctest_<op>_test_singlecore-baremetal",
+    "config": "sims.verilator.BuckyballToyVerilatorConfig"
+  },
+  "perf": {
+    "yosys_report_path": "bbdev/api/steps/yosys/log/hierarchy_report.txt",
+    "timing_report_path": "bbdev/api/steps/yosys/log/timing_report.txt",
+    "summary": ""
+  },
+  "notes": []
+}

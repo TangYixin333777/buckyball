@@ -1,0 +1,119 @@
+{
+  "contracts": {
+    "BALL_HANDOFF_V1": {
+      "template": ".github/promote/BALL_HANDOFF_V1.template.json",
+      "required": [
+        "handoff_version",
+        "schema_version",
+        "ball_name",
+        "core_name",
+        "package",
+        "ball.name",
+        "ball.core_name",
+        "ball.package",
+        "isa.op",
+        "isa.func7",
+        "mapping.ballId",
+        "mapping.ballName",
+        "mapping.inBW",
+        "mapping.outBW",
+        "registrar_min.mapping.ball_name",
+        "registrar_min.mapping.ball_id",
+        "registrar_min.generator.class_name",
+        "registrar_min.decode.op",
+        "registrar_min.decode.func7",
+        "registrar_min.decode.bid",
+        "decode.disa_symbol",
+        "decode.funct7",
+        "decode.bid",
+        "decode.needs_op2",
+        "decode.iter_from",
+        "files.wrapper",
+        "files.core",
+        "files.config_scala",
+        "files.config_json",
+        "constraints.class_name_must_equal_ballName",
+        "constraints.bid_must_equal_ballId"
+      ],
+      "optional": []
+    },
+    "BALL_REGISTRATION_RESULT_V1": {
+      "template": ".github/promote/BALL_REGISTRATION_RESULT_V1.template.json",
+      "required": [
+        "result_version",
+        "ball_name",
+        "mapping_applied",
+        "generator_applied",
+        "decode_applied",
+        "touched_files",
+        "errors"
+      ],
+      "optional": []
+    },
+    "DEBUG_OPTIMIZE_HANDOFF_V1": {
+      "template": ".github/promote/DEBUG_OPTIMIZE_HANDOFF_V1.template.json",
+      "required": [
+        "handoff_version",
+        "ball_name",
+        "analysis_goal",
+        "runtime.failure_class",
+        "runtime.log_path",
+        "runtime.test_target",
+        "runtime.binary_name",
+        "runtime.config"
+      ],
+      "optional": [
+        "runtime.stdout_log_path",
+        "runtime.disasm_log_path",
+        "perf.yosys_report_path",
+        "perf.timing_report_path",
+        "perf.summary",
+        "notes"
+      ]
+    },
+    "DEBUG_OPTIMIZE_RESULT_V1": {
+      "template": ".github/promote/DEBUG_OPTIMIZE_RESULT_V1.template.json",
+      "required": [
+        "result_version",
+        "ball_name",
+        "status",
+        "root_cause",
+        "baseline_snapshot.area_summary",
+        "baseline_snapshot.timing_summary",
+        "baseline_snapshot.cycle_summary",
+        "post_snapshot.area_summary",
+        "post_snapshot.timing_summary",
+        "post_snapshot.cycle_summary",
+        "comparison_table",
+        "validate_gate.ran",
+        "validate_gate.passed",
+        "validate_gate.notes",
+        "perf.area_summary",
+        "perf.timing_summary",
+        "perf.cycle_summary",
+        "changes",
+        "optimization_rounds",
+        "optimization_rounds.worst_path_slack",
+        "optimization_rounds.timing_safe",
+        "optimization_summary.total_area_delta",
+        "optimization_summary.total_timing_delta",
+        "optimization_summary.total_cycle_delta",
+        "optimization_summary.rounds_completed",
+        "optimization_summary.final_worst_path_slack",
+        "optimization_summary.timing_safe",
+        "next_action"
+      ],
+      "optional": []
+    }
+  },
+  "output_policy": {
+    "default_mode": "compact",
+    "compact": {
+      "json_only": true,
+      "stable_key_order": true
+    },
+    "verbose": {
+      "include_narrative_sections": true
+    }
+  }
+}
